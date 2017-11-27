@@ -21,35 +21,50 @@
   <main>
     <section class="filters">
     <h1 class="visully-hidden">Фильтр гостиниц<h1>
-    <form action="catalog.html" method="get" class="filters-hotels">
-      <fieldset class="filter-hotels-infrastructure">
+    <form action="catalog.html" method="get" class="filter">
+    <fieldset>
       <legend>Инфраструктура:</legend>
-      <input type="checkbox" name="pool" id="pool" checked>
-      <label for="pool">Бассейн</label>
-      <input type="checkbox" name="parking" id="parking">
-      <label for="parking">Парковка</label>
-      <input type="checkbox" name="wi-fi" id="wi-fi">
-      <label for="wi-fi">wi-fi</label>
+      <ul>
+        <li class="filter-infrastructure">
+          <input type="checkbox" name="pool" id="pool" checked>
+          <label for="pool">Бассейн</label>
+        </li>
+        <li class="filter-infrastructure">
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">Парковка</label>
+        </li>
+        <li class="filter-infrastructure">
+          <input type="checkbox" name="wi-fi" id="wi-fi">
+          <label for="wi-fi">wi-fi</label>
+        </li>
+      </ul>
     </fieldset>
-    <fieldset class="filters-hotels-house">
+    <fieldset>
     <legend>Тип жилья:</legend>
-    <input type="checkbox" name="hotel" id="hotel" checked>
-    <label for="hotel">Гостиница</label>
-    <input type="checkbox" name="motels" id="motels" checked>
-    <label for="motels">Мотель</label>
-    <input type="checkbox" name="apartments" id="apartments" checked>
-    <label for="apartments">Апартаменты</label>
-    </fieldset>
-    <!--Может fieldset не нужно??? сделать заголовки и внутри инпуты-->
-    <div>
+    <ul>
+      <li class="filter-infrastructure">
+        <input type="checkbox" name="hotel" id="hotel" checked>
+        <label for="hotel">Гостиница</label>
+      </li>
+      <li class="filter-infrastructure">
+        <input type="checkbox" name="motels" id="motels" checked>
+        <label for="motels">Мотель</label>
+      </li>
+      <li class="filter-infrastructure">
+        <input type="checkbox" name="apartments" id="apartments" checked>
+        <label for="apartments">Апартаменты</label>
+      </li>
+     </ul>
+     </fieldset>
+    <div class="filter-cost">
       <label for="cost">Стоимость в сутки (р):</label>
       <div>
       <output name="cost">от 0</output>
       <output name="cost">до 3000</output>
     </div>
       <input type="range" name="cost" id="cost" min="0" max="4000" step="1" value="0" value="3000">
-      <a class="button" href="catalog.html">Показать</a>
     </div>
+      <input type="submit" value="Показать">
     </form>
   </section>
     <section class="hotels">

@@ -14,14 +14,13 @@
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="features">
       <h1 class="visually-hidden">Седона</h1>
-
     </section>
     <section class="advantages">
       <b>Седона-небольшой городок в Аризоне,<br>
@@ -80,25 +79,26 @@
                   <b>Заинтересовались?</b>
                 <p>Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
+                <button type="button" class="search hotels">Поиск гостиницы в Седоне</button>
                 <form action="catalog.html" method="get" class="search">
-                <button class="search hotels">Поиск гостиницы в Седоне</button>
                 <div>
                 <label for="check-in">Дата заезда:</label>
-                <input type="date" name="date check-in" id="check-in" value="24 апреля 2017">
+                <input type="date" name="date-check-in" id="check-in" placeholder="24 апреля 2017">
                 <label for="leaving">Дата выезда:</label>
-                <input type="date" name="date leaving" id="leaving" value="4 июля 2017">
-                <!--даты не отображаются с помощью value, не знаю как сделать -->
+                <input type="date" name="date-leaving" id="leaving" placeholder="4 июля 2017">
                 </div>
                 <div>
                 <label for="adults">Взрослые</label>
-                <input type="number" name="adults" id="adults" min="1" max="10" step="1" value="2">
+                <button type="button">-</button>
+                <input type="text" name="adults" id="adults" placeholder="2">
+                <button type="button">+</button>
                 <label for="kids">Дети</label>
-                <input type="number" name="kids" id="kids" min="0" max="10" step="1" value="0">
+                <button type="button">-</button>
+                <input type="text" name="kids" id="kids" placeholder="0">
+                <button type="button">+</button>
                 </div>
-                <a class="button" href="to find.html">Найти</a>
+                <button type="submit" class="find">Найти</button>
               </form>
-
                 <img src="img/index-map.jpg" width="100" height="100" alt="Карта">
               </div>
               </main>
@@ -112,6 +112,5 @@
                   </ul>
                 </div>
               </footer>
-
             </body>
 </html>
