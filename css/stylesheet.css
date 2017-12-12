@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  background-color: #00BFFF;
+  background-image: url(img/background photo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
