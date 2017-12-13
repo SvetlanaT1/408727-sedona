@@ -2,11 +2,123 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+
   text-transform: uppercase;
 
-  background-color: #00BFFF;
+  background-color: #ffffff;
   background-image: url(img/background photo.jpg);
   background-position: top center;
   background-repeat: no-repeat;
 
+}
+
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+color: #000000;
+}
+.advantages {
+  background-color: #ffffff;
+}
+.advantages b {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+.advantages-new-list {
+list-style: none;
+}
+.advantages-item,
+.advantages-item-house,
+.advantages-item-burger,
+.advantages-item-souvenirs {
+  text-align: center;
+}
+.advantages-list h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+.advantages-item {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.advantages-new-item {
+  text-align: center;
+  background-color: #eeeeee;
+}
+.map {
+  background-color: #ffffff;
+}
+.map b {
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+}
+.map p {
+  text-align: center;
+}
+.search .hotels {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+}
+.search .hotels:hover {
+  background-color: #604e43;
+}
+.search .hotels:active {
+  color:#766860;
+  background-color: #503e33;
+}
+.search input {
+  font: inherit;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: 2px solid  #f2f2f2;
+}
+.search input:hover {
+  background-color: #ebebeb;
+}
+.search input:focus {
+  background-color: #ffffff;
+}
+.find {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+}
+.find:hover {
+  background-color: #669ec0;
+}
+.find:active {
+  color: #84b4d0;
+  background-color: #5496bd;
+}
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+.footer-social {
+  color: #ffffff;
 }
